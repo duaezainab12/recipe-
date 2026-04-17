@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Legal Vault - Your Digital Legal Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="40">
+                <span class="logo-text">Smart Legal Vault+</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="{{ url_for('login_page') }}" class="btn btn-outline">Login</a>
+                <a href="{{ url_for('register_page') }}" class="btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Smart Legal Vault – Your Digital Legal Assistant</h1>
+            <p>Manage cases, clients, and court orders with ease and security.</p>
+            <a href="{{ url_for('register_page') }}" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2>About Smart Legal Vault</h2>
+                <p>Adv. Ch. Aamir, practicing lawyer with expertise in civil and criminal law, now bringing technology to simplify legal case management.</p>
+                <p>Our mission is to empower legal professionals with cutting-edge tools that streamline their workflow, enhance client relationships, and secure sensitive legal documents.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Legal Professional">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-folder feature-icon"></i>
+                    <h3>Case Management</h3>
+                    <p>Organize and track all your cases in one secure location with advanced search and filtering capabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-pdf feature-icon"></i>
+                    <h3>Court Orders (PDF)</h3>
+                    <p>Store, manage, and access court orders and other legal documents in PDF format with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-address-book feature-icon"></i>
+                    <h3>Client Records</h3>
+                    <p>Maintain comprehensive client profiles with contact information, case history, and important notes.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-paperclip feature-icon"></i>
+                    <h3>File Attachments</h3>
+                    <p>Attach relevant documents, images, and files to cases and client records for quick reference.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock feature-icon"></i>
+                    <h3>Secure Access</h3>
+                    <p>Bank-level security ensures that your sensitive legal data remains protected at all times.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bell feature-icon"></i>
+                    <h3>Case Reminders</h3>
+                    <p>Never miss important deadlines with our intelligent notification system for case milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Smart Legal Vault+. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
