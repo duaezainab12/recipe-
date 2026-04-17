@@ -97,8 +97,7 @@ php artisan serve
 AI & Data Science Student
 
 * GitHub: https://github.com/duaezainab12
-* LinkedIn: https://linkedin.com/in/dua-e-zainab
-
+* LinkedIn: https://www.linkedin.com/in/dua-e-zainab-308b2b292/
 ---
 
 ## ⭐ Contribution
